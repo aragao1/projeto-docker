@@ -1,26 +1,26 @@
 import { describe, it, expect } from "vitest";
 
-describe("Testes básicos", () => {
+describe("Testes básicos do projeto", () => {
 
-  it("1. Soma simples", () => {
-    expect(1 + 1).toBe(2);
+  it("Deve somar corretamente", () => {
+    expect(2 + 2).toBe(4);
   });
 
-  it("2. String contém texto", () => {
-    expect("docker".includes("dock")).toBe(true);
+  it("Deve verificar texto", () => {
+    expect("docker".toUpperCase()).toBe("DOCKER");
   });
 
-  it("3. Array contém valor", () => {
-    const lista = [1, 2, 3];
-    expect(lista.includes(2)).toBe(true);
+  it("Deve validar array", () => {
+    const lista = [10, 20, 30];
+    expect(lista.length).toBe(3);
   });
 
-  it("4. Boolean verdadeiro", () => {
-    expect(true).toBe(true);
+  it("Deve validar booleano", () => {
+    expect(5 > 2).toBe(true);
   });
 
-  it("5. Comparação de número", () => {
-    expect(10).toBeGreaterThan(5);
+  it("Deve comparar números", () => {
+    expect(100).toBeGreaterThan(50);
   });
 
 });
